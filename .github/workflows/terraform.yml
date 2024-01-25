@@ -26,6 +26,7 @@ jobs:
         with:
           terraform_version: 1.7.1
           terraform_wrapper: false
+      - name: Apply Terraform configuration
         run: |
           terraform init
           terraform apply --auto-approve
