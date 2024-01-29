@@ -8,7 +8,7 @@ terraform {
 
  backend "s3" {
      bucket = "batoto-bitange"
-     key = "global/iam/github-actions/githuboidc.tfstate"
+     key = "global/iam/github-actions/github-oidc.tfstate"
      region = "us-east-1"
  
      dynamodb_table = "terraone-locks"
